@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .form-control {
+    @apply flex justify-between items-center md:h-10 flex-col gap-3 md:flex-row;
+  }
+  .form-label {
+    @apply text-purple2 font-bold tracking-[0.2em] uppercase;
+  }
+}
+
+.kumbh {
+  @apply !font-kumbh;
+}
+.space {
+  @apply !font-space;
+}
+.roboto {
+  @apply !font-roboto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

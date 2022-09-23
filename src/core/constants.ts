@@ -1,0 +1,6 @@
+export const POMO_STATE = {
+  INITIAL: 'START',
+  RUNNING: 'PAUSE',
+  PAUSED: 'RESUME',
+  END: 'RESTART',
+};
